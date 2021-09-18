@@ -8,7 +8,6 @@ public class Car {
 
     static {
         TOTAL_KM = 1;
-        TOTAL_KM = 0;
     }
 
     private static void printTotalKm() {

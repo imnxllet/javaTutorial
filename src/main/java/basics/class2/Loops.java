@@ -22,7 +22,7 @@ public class Loops {
         }
 
         // while loop
-        int i = 0;
+        int i = 1;
 
         while (i < 5) {
             System.out.println("in while loop: i = " + i);
