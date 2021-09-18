@@ -4,8 +4,10 @@ package basics.firstClass;
  * A class which represents car objects
  */
 public class Car {
+    private static String DEFAULT_MESSAGE = "This is string constant!";
+
     // Instance variables
-    private String color;
+    public String color;
     private String model;
     private int year;
 
@@ -24,7 +26,7 @@ public class Car {
 
     // Method must have access modifier: public, protected, private
     // Method must declare its return type (void means return nothing)
-    public void printVehicleInfo() {
+    private void printVehicleInfo() {
         System.out.println(this.computeVehicleInfo());
     }
 
@@ -65,6 +67,10 @@ public class Car {
         this.year = year;
     }
 
+    private static void printStringConstant() {
+        System.out.println(DEFAULT_MESSAGE);
+    }
+
     // Main method
     public static void main(String[] args) {
         // Create a new instance of class Vehicle
@@ -81,5 +87,7 @@ public class Car {
         // Create a new instance of class Vehicle using a different constructor
         Car audi = new Car("Black", "S5", 2020);
         audi.printVehicleInfo();
+
+        Car.printStringConstant();
     }
 }

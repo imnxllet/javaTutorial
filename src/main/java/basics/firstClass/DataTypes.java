@@ -14,11 +14,19 @@ public class DataTypes {
         double temperature = 39.1;
         char a = 'a';
 
+
         // Class types (String, Integer, Double, Vehicle - provided by Java or user defined)
         String helloWorldMessage = "Hello world!";
 
         Car myCar = new Car();
         myCar = null;
+
+        // primitives can't be null or compared to null
+        //char b = null;
+        //isFalse = b == null;
+
+
+
 
         // Wrapper class for primitives
         Integer price = 22;
