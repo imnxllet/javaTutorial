@@ -6,6 +6,8 @@ package basics.class2;
 public class Car {
     private static int TOTAL_KM = 0;
 
+    private int var = 0;
+
     static {
         TOTAL_KM = 1;
     }
@@ -21,6 +23,8 @@ public class Car {
     public static void main(String[] args) {
         Car audi = new Car();
         Car tesla = new Car();
+
+        audi.driveOneKm();
 
         Car.printTotalKm();
 

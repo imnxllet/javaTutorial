@@ -1,4 +1,4 @@
-package basics.firstClass;
+package basics.class1;
 
 /**
  * A class which represents car objects
@@ -39,7 +39,7 @@ public class Car {
     }
 
     private String computeVehicleInfo() {
-        return "Car info: "+ this.color + ", " + this.model + ", " + this.year;
+        return "Car info: "+ color + ", " + this.model + ", " + this.year;
     }
 
     // Getters and setters for the instance variables

@@ -1,4 +1,4 @@
-package basics.firstClass;
+package basics.class1;
 
 /**
  * This class aims to showcase the hello world example using Java
