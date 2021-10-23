@@ -6,7 +6,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class NumberServiceTest {
-    private NumberService numberService = new NumberService();;
+    private NumberService numberService;
 
     @BeforeClass
     public static void setUpBeforeClass() {
