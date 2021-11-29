@@ -7,7 +7,7 @@ public class EmailController {
     //private EmailService emailService = new EmailServiceImpl();
     private EmailService emailService;
 
-    public EmailController(EmailServiceImpl emailService) {
+    public EmailController(EmailService emailService) {
         this.emailService = emailService;
     }
 
