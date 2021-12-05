@@ -1,6 +1,6 @@
-package basics.class6.iteratorPattern;
+package basics.class6.iteratorPattern.lectureExample;
 
-import basics.class6.iteratorPattern.impl.NameIterator;
+import basics.class6.iteratorPattern.lectureExample.impl.NameIterator;
 
 public class NameRepository {
 

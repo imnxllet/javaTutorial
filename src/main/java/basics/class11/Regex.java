@@ -5,9 +5,16 @@ import java.util.regex.Pattern;
 
 public class Regex {
     public static void main(String[] args) {
+        String sku = "1000089992";
+
         //match one String against one regex
         System.out.println(Pattern.matches("([.w]){2}f", "..f"));
         System.out.println(Pattern.matches("[k*]a*b", "kaaaaabx"));
+
+        //using the String method "matches" to check if a String matches a regex
+        String str = "Hello_World11";
+        boolean isSame = str.matches("(Hello)\\w.*(1)\\2");
+        System.out.println(isSame);
 
         //using a Matcher object to find matching substrings
         Pattern p = Pattern.compile("CSC[0-9][0-9][0-9]H1([FS])");
@@ -16,10 +23,5 @@ public class Regex {
         while (matcher.find()) {
             System.out.println(matcher.group());
         }
-
-        //using the String method "matches" to check if a String matches a regex
-        String str = "Hello_World11";
-        boolean isSame = str.matches("(Hello)\\w.*(1)\\2");
-        System.out.println(isSame);
     }
 }

@@ -1,4 +1,4 @@
-package basics.class6.iteratorPattern;
+package basics.class6.iteratorPattern.lectureExample;
 
 public interface Iterator {
     boolean hasNext();
