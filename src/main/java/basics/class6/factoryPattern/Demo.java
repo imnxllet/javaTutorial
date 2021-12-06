@@ -1,5 +1,6 @@
 package basics.class6.factoryPattern;
 
+import basics.class6.factoryPattern.entities.Shape;
 import basics.class6.factoryPattern.factory.ShapeFactory;
 
 public class Demo {

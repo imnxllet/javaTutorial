@@ -1,6 +1,8 @@
 package basics.class6.iteratorPattern.examQuestion.dec2015Q5;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class TwoTwo<T> implements Iterable<T>{
     List<T> items = new ArrayList<T>();

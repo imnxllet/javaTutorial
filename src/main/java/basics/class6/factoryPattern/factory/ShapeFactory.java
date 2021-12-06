@@ -1,8 +1,8 @@
 package basics.class6.factoryPattern.factory;
 
-import basics.class6.factoryPattern.Shape;
-import basics.class6.factoryPattern.impl.Rectangle;
-import basics.class6.factoryPattern.impl.Square;
+import basics.class6.factoryPattern.entities.Shape;
+import basics.class6.factoryPattern.entities.Rectangle;
+import basics.class6.factoryPattern.entities.Square;
 
 public class ShapeFactory {
 

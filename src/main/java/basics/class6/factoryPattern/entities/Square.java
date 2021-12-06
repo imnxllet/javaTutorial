@@ -1,6 +1,4 @@
-package basics.class6.factoryPattern.impl;
-
-import basics.class6.factoryPattern.Shape;
+package basics.class6.factoryPattern.entities;
 
 public class Square implements Shape {
 
