@@ -1,6 +1,6 @@
-package basics.designPatterns.iteratorPattern.lectureExample;
+package basics.designPatterns.iteratorPattern;
 
-import basics.designPatterns.iteratorPattern.lectureExample.impl.NameIterator;
+import basics.designPatterns.iteratorPattern.impl.NameIterator;
 
 public class NameRepository {
 
@@ -11,8 +11,8 @@ public class NameRepository {
     public static void main(String[] args) {
         NameRepository namesRepository = new NameRepository();
 
-        for(Iterator iter = namesRepository.getIterator(); iter.hasNext();){
-            String name = (String)iter.next();
+        for (Iterator iter = namesRepository.getIterator(); iter.hasNext(); ) {
+            String name = (String) iter.next();
             System.out.println("Name : " + name);
         }
     }

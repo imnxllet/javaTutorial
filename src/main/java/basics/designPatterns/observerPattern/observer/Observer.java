@@ -1,8 +1,7 @@
 package basics.designPatterns.observerPattern.observer;
 
-import basics.designPatterns.observerPattern.publisher.Publisher;
+import basics.designPatterns.observerPattern.observable.Observable;
 
-public abstract class Observer {
-    protected Publisher publisher;
-    public abstract void update();
+public interface Observer {
+    void update(Observable o, Object arg);
 }

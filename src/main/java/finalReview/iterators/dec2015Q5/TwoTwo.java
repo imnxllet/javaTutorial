@@ -1,4 +1,4 @@
-package basics.designPatterns.iteratorPattern.examQuestion.dec2015Q5;
+package finalReview.iterators.dec2015Q5;
 
 import java.util.ArrayList;
 import java.util.Iterator;

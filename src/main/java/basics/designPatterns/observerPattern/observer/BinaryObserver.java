@@ -1,16 +1,16 @@
 package basics.designPatterns.observerPattern.observer;
 
-import basics.designPatterns.observerPattern.publisher.Publisher;
+import basics.designPatterns.observerPattern.observable.Observable;
 
-public class BinaryObserver extends Observer {
+public class BinaryObserver implements Observer {
+    private Observable observable;
 
-    public BinaryObserver(Publisher publisher) {
-        this.publisher = publisher;
-        this.publisher.addObserver(this);
+    public BinaryObserver(Observable observable) {
+        this.observable = observable;
     }
 
     @Override
-    public void update() {
-        System.out.println("Binary String is updated to " + Integer.toBinaryString(publisher.getNumber()));
+    public void update(Observable o, Object arg) {
+        System.out.println("Binary String is updated to " + Integer.toBinaryString((int) arg));
     }
 }

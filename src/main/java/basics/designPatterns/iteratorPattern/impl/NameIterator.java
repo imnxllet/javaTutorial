@@ -1,6 +1,6 @@
-package basics.designPatterns.iteratorPattern.lectureExample.impl;
+package basics.designPatterns.iteratorPattern.impl;
 
-import basics.designPatterns.iteratorPattern.lectureExample.Iterator;
+import basics.designPatterns.iteratorPattern.Iterator;
 
 public class NameIterator implements Iterator {
     private int index;

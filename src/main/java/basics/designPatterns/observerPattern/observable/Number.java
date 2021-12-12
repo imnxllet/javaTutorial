@@ -1,31 +1,29 @@
-package basics.designPatterns.observerPattern.publisher;
+package basics.designPatterns.observerPattern.observable;
 
 import basics.designPatterns.observerPattern.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Publisher {
+public class Number implements Observable{
 
     private List<Observer> observers = new ArrayList<Observer>();
     private int number;
 
-    public int getNumber() {
-        return number;
-    }
-
-    public void updateNumber(int state) {
-        this.number = state;
-        notifyAllObservers();
+    @Override
+    public void update(Object arg) {
+        this.number = (int) arg;
+        notifyObservers(number);
     }
 
     public void addObserver(Observer observer){
         observers.add(observer);
     }
 
-    public void notifyAllObservers(){
+    @Override
+    public void notifyObservers(Object arg) {
         for (Observer observer : observers) {
-            observer.update();
+            observer.update(this, arg);
         }
     }
 }
