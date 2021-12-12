@@ -5,7 +5,7 @@ import basics.designPatterns.observerPattern.observer.Observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Number implements Observable{
+public class Number extends Observable{
 
     private List<Observer> observers = new ArrayList<Observer>();
     private int number;
@@ -16,6 +16,7 @@ public class Number implements Observable{
         notifyObservers(number);
     }
 
+    @Override
     public void addObserver(Observer observer){
         observers.add(observer);
     }

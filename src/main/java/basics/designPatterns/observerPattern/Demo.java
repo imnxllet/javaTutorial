@@ -6,7 +6,7 @@ import basics.designPatterns.observerPattern.observer.BinaryObserver;
 
 public class Demo {
     public static void main(String[] args) {
-        Observable number = new Number();
+        Number number = new Number();
 
         number.addObserver(new BinaryObserver(number));
 

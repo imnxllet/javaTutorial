@@ -1,22 +1,27 @@
-package basics.designPatterns.observerPattern.observable;
+package finalReview.observer.dec2018Q1;
 
-import basics.designPatterns.observerPattern.observer.Observer;
+import java.util.HashSet;
+import java.util.Set;
 
-public abstract class Observable {
+public class Observable {
+    private Set<Observer> observers = new HashSet<>();
 
     /**
      * adds o to the set of observers if it isn't already there
      *
      * @param o
      */
-    abstract void addObserver(Observer o);
+    void addObserver(Observer o) {
+        observers.add(o);
+    }
 
     /**
      * if this object has changed, as indicated by
      * the hasChanged method, then notifies all of its observers by calling update (arg)
      * and then calls the clearChanged method to indicate that this object has no longer changed
      */
-    abstract void notifyObservers(Object arg);
-
-    abstract void update(Object arg);
+    public void notifyObservers(Object arg) {
+        for (Observer o : observers)
+            o.update(this, arg);
+    }
 }

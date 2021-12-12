@@ -21,7 +21,9 @@ public abstract class Car {
         }
     }
 
-    abstract void drive();
+    public void drive() {
+        System.out.println("Car is driving!");
+    }
 
     abstract void brake();
 }
