@@ -1,0 +1,23 @@
+package basics.designPatterns.factoryPattern.factory;
+
+import basics.designPatterns.factoryPattern.entities.Shape;
+import basics.designPatterns.factoryPattern.entities.Rectangle;
+import basics.designPatterns.factoryPattern.entities.Square;
+
+public class ShapeFactory {
+
+    //use getShape method to get object of type shape
+    public Shape getShape(String shapeType){
+        if(shapeType == null){
+            return null;
+        }
+        if(shapeType.equalsIgnoreCase("RECTANGLE")){
+            return new Rectangle();
+
+        } else if(shapeType.equalsIgnoreCase("SQUARE")){
+            return new Square();
+        }
+
+        return null;
+    }
+}

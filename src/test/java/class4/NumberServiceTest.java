@@ -1,6 +1,6 @@
 package class4;
 
-import basics.class4.NumberService;
+import basics.unitTest.NumberService;
 import org.junit.*;
 
 import static org.junit.Assert.*;
