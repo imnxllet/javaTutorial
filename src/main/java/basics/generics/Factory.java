@@ -1,4 +1,4 @@
-package basics.floatingPoint.generics;
+package basics.generics;
 
 import basics.abstractClassAndInterface.Car;
 

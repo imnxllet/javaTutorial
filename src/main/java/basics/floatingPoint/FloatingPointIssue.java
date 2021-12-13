@@ -1,4 +1,4 @@
-package basics.regex;
+package basics.floatingPoint;
 
 import java.math.BigDecimal;
 

@@ -17,7 +17,7 @@ public class Equals {
         System.out.println(a == b);
         System.out.println(a.equals(b));
         System.out.println(b == c);
-
+        System.out.println(b.equals(c));
         System.out.println("------------------------");
 
 

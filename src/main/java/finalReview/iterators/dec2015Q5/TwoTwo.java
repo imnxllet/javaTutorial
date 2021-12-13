@@ -9,37 +9,13 @@ public class TwoTwo<T> implements Iterable<T>{
 
     @Override
     public Iterator<T> iterator() {
-        return new TwoTwoIterator();
+        return new TwoTwoIterator(items);
     }
 
     public void add(T item) {
         items.add(item);
     }
 
-    private class TwoTwoIterator implements Iterator<T> {
-        private int index = 0;
-        private int counter = 0;
-        private T item;
-        private Iterator<T> itemIterator = items.iterator();
-
-        @Override
-        public boolean hasNext() {
-            return index < items.size();
-        }
-
-        @Override
-        public T next() {
-            if (counter == 0) {
-                item = itemIterator.next();
-                counter++;
-            } else if (counter == 1) {
-                counter = 0;
-                index++;
-            }
-
-            return item;
-        }
-    }
 
     public static void main(String[] args) {
         TwoTwo<String> twoTwoString = new TwoTwo<>();

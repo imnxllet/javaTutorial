@@ -8,8 +8,8 @@ public class ListManager {
         list.addPair(2, 3);
         list.addPair(4, 5);
 
-//        for (Integer i : list) {
-//            System.out.print(i + " ");
-//        }
+        for (Integer i : list) {
+            System.out.print(i + " ");
+        }
     }
 }

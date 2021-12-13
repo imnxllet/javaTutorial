@@ -6,14 +6,10 @@ public class ExceptionExample {
     }
 
     public static void main(String[] args) {
-        // try - catch logic
-        //methodThatThrowsException();
-
-
         try {
             methodThatThrowsException();
         } catch (Exception ex) {
-            System.out.println("Catch it!");
+            System.out.println(ex.getMessage());
         }
     }
 }
